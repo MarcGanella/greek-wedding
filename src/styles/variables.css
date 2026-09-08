@@ -1,0 +1,10 @@
+:root {
+  --background-color: #ffffff;
+  --text-color: #222222;
+  --font-primary: Arial, sans-serif;
+  --max-width: 1200px;
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 2rem;
+  --spacing-lg: 4rem;
+}

@@ -1,0 +1,8 @@
+.layout {
+  min-height: 100vh;
+  min-height: 100dvh;
+}
+
+.layout__content {
+  padding-block: var(--spacing-md);
+}
