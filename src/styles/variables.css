@@ -1,7 +1,20 @@
 :root {
-  --background-color: #ffffff;
-  --text-color: #222222;
-  --font-primary: Arial, sans-serif;
+  --color-ivory: #f7f2e8;
+  --color-paper: #fbf8f1;
+  --color-blue: #164f7c;
+  --color-blue-dark: #123d61;
+  --color-olive: #68735a;
+  --color-olive-dark: #495443;
+  --color-gold: #b39155;
+  --color-gold-soft: #c7ad79;
+  --color-text: #25313a;
+  --color-text-soft: #646464;
+  --color-white: #ffffff;
+
+  --background-color: var(--color-ivory);
+  --text-color: var(--color-text);
+  --font-primary: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-heading: Georgia, "Times New Roman", serif;
   --max-width: 1200px;
   --spacing-xs: 0.5rem;
   --spacing-sm: 1rem;

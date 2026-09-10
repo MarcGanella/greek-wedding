@@ -1,3 +1,147 @@
 .header {
-  padding-block: var(--spacing-sm);
+  padding: 1.75rem 1.25rem;
+  border-bottom: 1px solid var(--color-gold-soft);
+  background-color: var(--color-paper);
+  text-align: center;
+}
+
+.header__inner {
+  max-width: var(--max-width);
+  margin-inline: auto;
+}
+
+.header__ornament {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  height: 1rem;
+  margin-bottom: 0.875rem;
+}
+
+.header__ornament::before,
+.header__ornament::after {
+  content: '';
+  width: 2.25rem;
+  height: 1px;
+  background-color: var(--color-gold-soft);
+}
+
+.header__leaves {
+  position: relative;
+  width: 1.5rem;
+  height: 1px;
+  background-color: var(--color-olive);
+  transform: rotate(-20deg);
+}
+
+.header__leaves::before,
+.header__leaves::after {
+  position: absolute;
+  content: '';
+  width: 0.625rem;
+  height: 0.3125rem;
+  border: 1px solid var(--color-olive);
+  border-radius: 0 100% 0 100%;
+}
+
+.header__leaves::before {
+  left: 0.125rem;
+  bottom: 0;
+}
+
+.header__leaves::after {
+  right: 0.125rem;
+  top: 0;
+}
+
+.header__names {
+  margin: 0;
+  color: var(--color-blue);
+  font-family: var(--font-heading);
+  font-size: clamp(2rem, 10vw, 3rem);
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+.header__names a {
+  text-decoration: none;
+}
+
+.header__date {
+  margin: 0.875rem 0 0;
+  color: var(--color-blue-dark);
+  font-size: 0.875rem;
+  letter-spacing: 0.12em;
+}
+
+.header__location {
+  margin: 0.25rem 0 0;
+  color: var(--color-text-soft);
+  font-size: 0.875rem;
+}
+
+.header__languages {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 0.75rem;
+}
+
+.header__languages button {
+  position: relative;
+  min-width: 2.75rem;
+  min-height: 2.75rem;
+  padding: 0.5rem;
+  border: 0;
+  border-radius: 0.125rem;
+  background: transparent;
+  color: var(--color-text-soft);
+  font: inherit;
+  font-size: 0.8125rem;
+  cursor: pointer;
+}
+
+.header__languages button + button::before {
+  position: absolute;
+  left: -0.5rem;
+  width: 0.5rem;
+  content: '·';
+  color: var(--color-text-soft);
+}
+
+.header__languages button[aria-pressed='true'] {
+  color: var(--color-blue);
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 0.375rem;
+  text-decoration-thickness: 1px;
+}
+
+@media (hover: hover) {
+  .header__languages button:hover {
+    background-color: var(--color-ivory);
+    color: var(--color-blue-dark);
+  }
+}
+
+.header a:focus-visible,
+.header button:focus-visible {
+  outline: 2px solid var(--color-blue);
+  outline-offset: 3px;
+}
+
+@media (min-width: 48rem) {
+  .header {
+    padding-block: 2.25rem;
+  }
+
+  .header__ornament {
+    margin-bottom: 1.25rem;
+  }
+
+  .header__date {
+    margin-top: 1.125rem;
+  }
 }
