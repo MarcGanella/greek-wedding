@@ -1,6 +1,35 @@
 export const translations = {
   ca: {
     travel: {
+      map: {
+        title: 'Ruta fins a Egio',
+        chooseRoute: 'Mostra una ruta',
+        economy: 'Econòmica',
+        recommended: 'Recomanada',
+        adventure: 'Aventurera',
+        barcelona: 'Barcelona',
+        rome: 'Roma',
+        athens: 'Atenes',
+        athensAirport: 'Aeroport d’Atenes',
+        ktel: 'KTEL d’Atenes',
+        aigio: 'Egio',
+        patras: 'Patras',
+        ionianIslands: 'Illes Jòniques',
+        twoHours: '≈ 2 h',
+        thirtyMinutes: '≈ 30 min',
+        destination: 'Destinació de la boda',
+        plane: 'Avió',
+        bus: 'Bus X93',
+        regionalBus: 'Bus regional',
+        car: 'Cotxe',
+        ferry: 'Ferri / connexió',
+        schematic: 'Esquema orientatiu, no a escala. Els temps corresponen als trajectes en cotxe.',
+        descriptions: {
+          economy: 'Barcelona → Atenes en avió; Atenes → Egio en bus. Patras és a prop d’Egio i les illes Jòniques queden a l’oest.',
+          recommended: 'Barcelona → Atenes en avió; Atenes → Egio en cotxe, unes 2 hores. Patras → Egio, uns 30 minuts en cotxe.',
+          adventure: 'Barcelona → Roma → illes Jòniques en avió; connexió marítima cap a Patras segons l’illa; cotxe a Egio i a Atenes, i avió de tornada a Barcelona.'
+        }
+      },
       title: 'Viatge a Grècia',
       subtitle: 'Com arribar a Egio des de Barcelona',
       intro: 'Hem preparat diverses opcions per arribar a Egio, al Peloponès, segons el vostre pressupost, temps i estil de viatge.',
@@ -228,6 +257,35 @@ export const translations = {
   },
   es: {
     travel: {
+      map: {
+        title: 'Ruta hasta Egio',
+        chooseRoute: 'Mostrar una ruta',
+        economy: 'Económica',
+        recommended: 'Recomendada',
+        adventure: 'Aventurera',
+        barcelona: 'Barcelona',
+        rome: 'Roma',
+        athens: 'Atenas',
+        athensAirport: 'Aeropuerto de Atenas',
+        ktel: 'KTEL de Atenas',
+        aigio: 'Egio',
+        patras: 'Patras',
+        ionianIslands: 'Islas Jónicas',
+        twoHours: '≈ 2 h',
+        thirtyMinutes: '≈ 30 min',
+        destination: 'Destino de la boda',
+        plane: 'Avión',
+        bus: 'Bus X93',
+        regionalBus: 'Bus regional',
+        car: 'Coche',
+        ferry: 'Ferry / conexión',
+        schematic: 'Esquema orientativo, no a escala. Los tiempos corresponden a los trayectos en coche.',
+        descriptions: {
+          economy: 'Barcelona → Atenas en avión; Atenas → Egio en bus. Patras está cerca de Egio y las islas Jónicas quedan al oeste.',
+          recommended: 'Barcelona → Atenas en avión; Atenas → Egio en coche, unas 2 horas. Patras → Egio, unos 30 minutos en coche.',
+          adventure: 'Barcelona → Roma → islas Jónicas en avión; conexión marítima hacia Patras según la isla; coche a Egio y Atenas, y avión de vuelta a Barcelona.'
+        }
+      },
       title: 'Viaje a Grecia',
       subtitle: 'Cómo llegar a Egio desde Barcelona',
       intro: 'Hemos preparado varias opciones para llegar a Egio, en el Peloponeso, según vuestro presupuesto, tiempo y estilo de viaje.',
@@ -455,6 +513,35 @@ export const translations = {
   },
   el: {
     travel: {
+      map: {
+        title: 'Διαδρομή προς το Αίγιο',
+        chooseRoute: 'Επιλογή διαδρομής',
+        economy: 'Οικονομική',
+        recommended: 'Προτεινόμενη',
+        adventure: 'Περιπέτεια',
+        barcelona: 'Βαρκελώνη',
+        rome: 'Ρώμη',
+        athens: 'Αθήνα',
+        athensAirport: 'Αεροδρόμιο Αθήνας',
+        ktel: 'ΚΤΕΛ Αθήνας',
+        aigio: 'Αίγιο',
+        patras: 'Πάτρα',
+        ionianIslands: 'Ιόνια νησιά',
+        twoHours: '≈ 2 ώρες',
+        thirtyMinutes: '≈ 30 λεπτά',
+        destination: 'Προορισμός του γάμου',
+        plane: 'Αεροπλάνο',
+        bus: 'Λεωφορείο X93',
+        regionalBus: 'Υπεραστικό λεωφορείο',
+        car: 'Αυτοκίνητο',
+        ferry: 'Πλοίο / σύνδεση',
+        schematic: 'Ενδεικτικό σχήμα, χωρίς κλίμακα. Οι χρόνοι αφορούν διαδρομές με αυτοκίνητο.',
+        descriptions: {
+          economy: 'Βαρκελώνη → Αθήνα με αεροπλάνο, Αθήνα → Αίγιο με λεωφορείο. Η Πάτρα είναι κοντά στο Αίγιο και τα Ιόνια νησιά βρίσκονται δυτικά.',
+          recommended: 'Βαρκελώνη → Αθήνα με αεροπλάνο, Αθήνα → Αίγιο με αυτοκίνητο, περίπου 2 ώρες. Πάτρα → Αίγιο, περίπου 30 λεπτά με αυτοκίνητο.',
+          adventure: 'Βαρκελώνη → Ρώμη → Ιόνια νησιά με αεροπλάνο, θαλάσσια σύνδεση προς Πάτρα ανάλογα με το νησί, αυτοκίνητο προς Αίγιο και Αθήνα, και πτήση επιστροφής στη Βαρκελώνη.'
+        }
+      },
       title: 'Ταξίδι στην Ελλάδα',
       subtitle: 'Από τη Βαρκελώνη στο Αίγιο',
       intro: 'Ετοιμάσαμε διαφορετικές επιλογές για να φτάσετε στο Αίγιο, στην Πελοπόννησο, ανάλογα με τον προϋπολογισμό, τον χρόνο και το στιλ του ταξιδιού σας.',

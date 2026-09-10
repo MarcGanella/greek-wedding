@@ -1,5 +1,8 @@
 import { useOutletContext } from 'react-router-dom'
 import { translations } from '../../i18n/translations.js'
+import GreeceRouteMap from '../../components/Travel/GreeceRouteMap.jsx'
+import TravelRoute from '../../components/Travel/TravelRoute.jsx'
+import TransportIcon from '../../components/Travel/TransportIcon.jsx'
 import './Travel.css'
 
 const transportModes = {
@@ -8,30 +11,36 @@ const transportModes = {
   adventure: ['plane', 'ferry', 'car'],
 }
 
-const transportPaths = {
-  plane: 'M3 12l7-2 2-7h2v7l7 2v2l-7-1v5l2 2v1l-3-1-3 1v-1l2-2v-5l-9 1z',
-  bus: 'M6 19v2m12-2v2M5 11h14M8 15h1m6 0h1M7 3h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2z',
-  car: 'M5 10l2-6h10l2 6M4 10h16v8H4zM6 18v3m12-3v3M7 14h1m8 0h1',
-  ferry: 'M7 12V7h10v5M12 7V3m-3 0h6M3 12l9-2 9 2-3 6H6zM3 21l3-1 3 1 3-1 3 1 3-1 3 1',
+const routeStops = {
+  economy: [
+    { location: 'barcelona', transport: 'plane' },
+    { location: 'athensAirport', transport: 'bus' },
+    { location: 'ktel', transport: 'bus', transportLabel: 'regionalBus' },
+    { location: 'aigio', destination: true },
+  ],
+  recommended: [
+    { location: 'barcelona', transport: 'plane' },
+    { location: 'athensAirport', transport: 'car', detail: 'twoHours' },
+    { location: 'aigio', destination: true },
+  ],
+  adventure: [
+    { location: 'barcelona', transport: 'plane' },
+    { location: 'rome', transport: 'plane' },
+    { location: 'ionianIslands', transport: 'ferry' },
+    { location: 'patras', transport: 'car', detail: 'thirtyMinutes' },
+    { location: 'aigio', destination: true, transport: 'car' },
+    { location: 'athensAirport', transport: 'plane' },
+    { location: 'barcelona' },
+  ],
 }
 
 function TransportIcons({ optionId }) {
   return (
     <span className="travel-transports" aria-hidden="true">
       {transportModes[optionId].map(mode => (
-        <svg key={mode} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinejoin="round" strokeLinecap="round" focusable="false">
-          <path d={transportPaths[mode]} />
-        </svg>
+        <TransportIcon key={mode} type={mode} />
       ))}
     </span>
-  )
-}
-
-function TravelStepFlow({ stops }) {
-  return (
-    <ol className="travel-flow">
-      {stops.map((stop, index) => <li key={`${index}-${stop}`}>{stop}</li>)}
-    </ol>
   )
 }
 
@@ -63,17 +72,13 @@ export default function Travel() {
         <p>{text.intro}</p>
       </section>
 
+      <GreeceRouteMap text={text.map} note={text.routeNote} />
+
       <section className="travel-overview" aria-labelledby="travel-overview-title">
         <h2 id="travel-overview-title">{text.overviewTitle}</h2>
         <div className="travel-cards">
           {text.options.map(option => <TravelOptionCard key={option.id} option={option} text={text} />)}
         </div>
-      </section>
-
-      <section className="travel-routes" aria-labelledby="travel-routes-title">
-        <h2 id="travel-routes-title">{text.routeTitle}</h2>
-        {text.routes.map((stops, index) => <TravelStepFlow key={index} stops={stops} />)}
-        <p className="travel-muted">{text.routeNote}</p>
       </section>
 
       <section className="travel-options" aria-labelledby="travel-options-title">
@@ -86,7 +91,16 @@ export default function Travel() {
             </div>
             <h3 id={`travel-${option.id}-title`}>{option.title}</h3>
             <p>{option.description}</p>
-            <TravelStepFlow stops={option.flow} />
+            <TravelRoute
+              label={`${option.title} · ${text.stepsTitle}`}
+              destinationLabel={text.map.destination}
+              stops={routeStops[option.id].map(stop => ({
+                ...stop,
+                location: text.map[stop.location],
+                transportLabel: text.map[stop.transportLabel || stop.transport],
+                detail: text.map[stop.detail],
+              }))}
+            />
             <div className="travel-option-body">
               <div>
                 <h4>{text.stepsTitle}</h4>

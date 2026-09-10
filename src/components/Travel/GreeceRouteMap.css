@@ -1,0 +1,143 @@
+.greece-map {
+  width: 100%;
+  max-width: 56.25rem;
+  min-width: 0;
+  margin-inline: auto;
+  padding: 1rem 0.5rem;
+  border: 1px solid var(--color-gold-soft);
+  border-radius: 0.25rem;
+  background: var(--color-paper);
+}
+
+.greece-map h2 {
+  text-align: center;
+}
+
+.greece-map__controls {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.25rem 0.5rem;
+}
+
+.greece-map__controls button {
+  min-height: 2.75rem;
+  padding: 0.5rem;
+  border: 0;
+  border-bottom: 2px solid transparent;
+  background: transparent;
+  color: var(--color-text-soft);
+  font: inherit;
+  font-size: 0.8125rem;
+  cursor: pointer;
+}
+
+.greece-map__controls button[aria-pressed='true'] {
+  color: var(--color-blue-dark);
+  border-bottom-color: var(--color-gold);
+  font-weight: 600;
+}
+
+.greece-map__controls button:focus-visible {
+  outline: 2px solid var(--color-blue);
+  outline-offset: 2px;
+}
+
+.greece-map__figure {
+  --map-route-color: var(--color-blue);
+  margin: 1rem 0 0;
+}
+
+.greece-map__figure--adventure {
+  --map-route-color: var(--color-olive);
+}
+
+.greece-map__drawing {
+  display: block;
+  width: 100%;
+  max-width: 26rem;
+  height: auto;
+  margin-inline: auto;
+}
+
+.greece-map__land {
+  fill: var(--color-ivory);
+  stroke: var(--color-gold-soft);
+  stroke-width: 1;
+  stroke-linejoin: round;
+}
+
+.greece-map__connections {
+  fill: none;
+  stroke: var(--map-route-color);
+  stroke-width: 2;
+  stroke-linecap: round;
+}
+
+.greece-map__flight {
+  stroke-dasharray: 4 5;
+}
+
+.greece-map__main-road {
+  stroke-width: 3;
+}
+
+.greece-map__nearby {
+  stroke: var(--color-olive);
+  stroke-width: 1.5;
+}
+
+.greece-map__symbols {
+  color: var(--map-route-color);
+}
+
+.greece-map__symbols svg {
+  width: 24px;
+  height: 24px;
+}
+
+.greece-map__points {
+  fill: var(--color-blue);
+  stroke: var(--color-paper);
+  stroke-width: 2;
+}
+
+.greece-map__destination-ring {
+  fill: var(--color-paper);
+  stroke: var(--color-gold);
+}
+
+.greece-map__labels {
+  fill: var(--color-blue-dark);
+  font-size: 16px;
+  paint-order: stroke;
+  stroke: var(--color-paper);
+  stroke-width: 4px;
+  stroke-linejoin: round;
+}
+
+.greece-map__destination-label {
+  font-weight: 700;
+}
+
+.greece-map__time {
+  font-size: 14px;
+}
+
+.greece-map__caption {
+  max-width: 38rem;
+  margin: 0.75rem auto 0;
+  padding-inline: 0.5rem;
+  color: var(--color-text-soft);
+  font-size: 0.8125rem;
+}
+
+.greece-map__caption p:last-child {
+  margin-bottom: 0;
+}
+
+@media (min-width: 48rem) {
+  .greece-map {
+    padding: 1.5rem;
+  }
+}
