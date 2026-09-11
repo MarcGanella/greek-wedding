@@ -1,5 +1,201 @@
 export const translations = {
   ca: {
+    localPlaces: {
+      title: "Llocs de la zona",
+      beaches: {
+        title: "Platges",
+        intro: "Aquestes són algunes de les nostres platges preferides de la zona d’Egio. Cadascuna té un ambient diferent: per passar el dia en família, fer snorkel, menjar vora el mar o gaudir de la posta de sol.",
+        waterShoesNotice: {
+          title: "Abans d’anar a la platja",
+          text: "A les platges que us proposem predominen les pedretes i els còdols, en lloc de la sorra.",
+          recommendation: "Us recomanem portar escarpins / sabates d’aigua.",
+          reasons: [
+            "Per caminar més còmodament per les pedres.",
+            "Per protegir els peus, especialment a les zones on hi pot haver eriçons de mar."
+          ]
+        },
+        labels: {
+          parking: "Aparcament",
+          idealFor: "Ideal per a"
+        },
+        temeni: {
+          name: "Temeni",
+          imageAlt: "Platja de Temeni",
+          description: "A prop de la zona on viu la família dels nuvis, és una de les opcions que més ens agraden per passar un dia tranquil en família.",
+          highlights: [
+            "Snorkel",
+            "Famílies",
+            "Nens",
+            "Menjar",
+            "Ombra"
+          ],
+          details: [
+            "Aigua molt clara, ideal per fer snorkel.",
+            "Bones opcions per menjar durant el dia.",
+            "Arbres i bones zones d’ombra; adequada per anar-hi amb nens."
+          ],
+          parking: "Disponible · Capacitat mitjana",
+          idealFor: "Famílies i un dia tranquil."
+        },
+        valimitika: {
+          name: "Valimitika",
+          imageAlt: "Platja de Valimitika",
+          description: "També és a prop de la zona on viu la família dels nuvis. Una platja tranquil·la i còmoda per quedar-s’hi tot el dia.",
+          highlights: [
+            "Snorkel",
+            "Famílies",
+            "Nens",
+            "Menjar",
+            "Ombra",
+            "Bon aparcament"
+          ],
+          details: [
+            "Aigua molt clara, molt bona per fer snorkel.",
+            "Opcions per menjar durant tot el dia.",
+            "Arbres i bones zones d’ombra; adequada per a famílies amb nens."
+          ],
+          parking: "Ampli i còmode",
+          idealFor: "Platja, snorkel i passar el dia amb comoditat."
+        },
+        digeliotika: {
+          name: "Digeliotika",
+          imageAlt: "Platja de Digeliotika",
+          description: "Una bona opció si busqueu una platja gran amb llocs a prop on menjar o prendre alguna cosa.",
+          highlights: [
+            "Platja gran",
+            "Menjar",
+            "Prendre alguna cosa",
+            "Bon aparcament"
+          ],
+          details: [
+            "Espai per gaudir d’una platja àmplia.",
+            "Menys arbres i ombra que a Temeni o Valimitika."
+          ],
+          parking: "Ampli i còmode",
+          idealFor: "Qui busca una platja àmplia amb llocs on menjar o prendre alguna cosa."
+        },
+        aliki: {
+          name: "Alikes",
+          imageAlt: "Platja de Alikes",
+          description: "Una de les platges d’Egio, gran i amb un ambient més jove. Ens agrada per passar moltes hores vora el mar amb amics.",
+          highlights: [
+            "Ambient",
+            "Amics",
+            "Restaurants",
+            "Bars",
+            "Menjar",
+            "Bon aparcament"
+          ],
+          details: [
+            "Molts restaurants i bars, amb música i ambient durant el dia.",
+            "Menys arbres i ombra natural.",
+            "Els bars solen permetre passar l’estona en gandules amb para-sols o en taules prop del mar."
+          ],
+          parking: "Ampli i còmode",
+          idealFor: "Passar el dia amb amics, menjar i gaudir de més ambient.",
+          alternativeName: "Aliki, com sentireu que en diuen allà"
+        },
+        akoli: {
+          name: "Akolis",
+          imageAlt: "Platja de Akolis",
+          description: "Ens agrada especialment al capvespre: veure la posta de sol, passejar vora el mar i quedar-nos a sopar o prendre alguna cosa.",
+          highlights: [
+            "Posta de sol",
+            "Passeig",
+            "Sopar",
+            "Copes",
+            "Ambient nocturn",
+            "Restaurants",
+            "Bon aparcament"
+          ],
+          details: [
+            "Platja gran, també per passar-hi el dia, amb un passeig agradable vora la costa.",
+            "Molts restaurants i bars; a la nit podeu menjar creps o altres snacks i sortir a prendre alguna cosa.",
+            "Menys ombra natural, amb gandules i para-sols als establiments de platja."
+          ],
+          parking: "Ampli i còmode",
+          idealFor: "Posta de sol, passeig, sopar i ambient nocturn.",
+          alternativeName: "Akoli, com sentireu que en diuen allà"
+        },
+        selianitika: {
+          name: "Selianitika",
+          imageAlt: "Platja de Selianitika",
+          description: "Amb un ambient que recorda en alguns aspectes Akoli, és una zona força animada per menjar, sopar o sortir a prendre alguna cosa.",
+          highlights: [
+            "Restaurants",
+            "Sopar",
+            "Copes",
+            "Ambient nocturn",
+            "Animada"
+          ],
+          details: [
+            "Molts bars i restaurants, tant per dinar com per sopar.",
+            "El passeig pot resultar menys còmode perquè hi sol haver força trànsit de vehicles."
+          ],
+          parking: "Més limitat · Pot costar més trobar-hi lloc",
+          idealFor: "Sortir a menjar, sopar o prendre alguna cosa en una zona animada."
+        }
+      }
+    },
+    venue: {
+      title: "Lloc i com arribar-hi",
+      subtitle: "Liopetro · Φωνησκαριά",
+      intro: "La celebració tindrà lloc a Liopetro, als afores d’Egio. Des del centre d’Egio s’hi arriba fàcilment en cotxe o amb l’autobús que posarem a disposició dels convidats.",
+      location: {
+        name: "Liopetro",
+        address: "Φωνησκαριά 251 00, Grècia",
+        fromAigio: "Egio → Liopetro",
+        openMaps: "Obrir a Google Maps",
+        mapsPending: "L’enllaç de Google Maps estarà disponible aviat."
+      },
+      car: {
+        title: "En cotxe",
+        duration: "Uns 10–15 minuts en cotxe",
+        description: "Des d’Egio i els voltants és fàcil arribar a Liopetro amb vehicle propi.",
+        routeFeatures: [
+          "Carreteres locals amb alguns trams estrets.",
+          "Pas per petites zones residencials.",
+          "Trajecte senzill seguint les indicacions del navegador."
+        ],
+        openRoute: "Obrir la ruta a Google Maps",
+        adviceTitle: "Si vens en cotxe",
+        advice: [
+          "Si condueixes, evita beure alcohol.",
+          "Les carreteres locals poden ser estretes. Hi pot haver vianants pels marges o per la calçada, gats o gossos a prop de la carretera i motos circulant, especialment a les zones residencials.",
+          "Condueix amb calma i respecta sempre els límits de velocitat. Es poden fer controls policials."
+        ],
+        chooseBus: "Si vols beure durant la festa, et recomanem utilitzar l’autobús del casament."
+      },
+      parking: {
+        title: "Aparcament gratuït i ampli",
+        description: "Liopetro disposa d’un aparcament molt ampli per als convidats.",
+        noReservation: "No cal reservar plaça."
+      },
+      bus: {
+        title: "Autobús del casament",
+        description: "Posarem un autobús privat per portar els convidats des del centre d’Egio fins a Liopetro i tornar després de la festa.",
+        recommended: "L’autobús és l’opció recomanada per gaudir del sopar i de la festa sense haver de preocupar-vos per conduir.",
+        provisional: "Horari provisional · Per confirmar",
+        confirmed: "Horari confirmat",
+        outbound: {
+          title: "Anada",
+          from: "Estació d’autobusos d’Egio",
+          to: "Liopetro"
+        },
+        return: {
+          title: "Tornada",
+          from: "Liopetro",
+          to: "Egio"
+        },
+        confirmationNote: "Els horaris i el punt exacte de sortida es confirmaran més endavant. Poden canviar."
+      },
+      map: {
+        title: "Ubicació",
+        openMaps: "Veure a Google Maps",
+        iframeTitle: "Ubicació de Liopetro a Google Maps"
+      },
+      photoAlt: "Espai de celebració de Liopetro"
+    },
     travel: {
       map: {
         title: 'Ruta fins a Egio',
@@ -256,6 +452,202 @@ export const translations = {
     languageSelector: 'Idioma',
   },
   es: {
+    localPlaces: {
+      title: "Sitios de la zona",
+      beaches: {
+        title: "Playas",
+        intro: "Estas son algunas de nuestras playas favoritas de la zona de Egio. Cada una tiene un ambiente diferente: para pasar el día en familia, hacer snorkel, comer junto al mar o disfrutar del atardecer.",
+        waterShoesNotice: {
+          title: "Antes de ir a la playa",
+          text: "En las playas que os proponemos predominan las piedras pequeñas y los cantos rodados, en lugar de arena.",
+          recommendation: "Os recomendamos llevar escarpines / zapatos de agua.",
+          reasons: [
+            "Para caminar más cómodamente por las piedras.",
+            "Para proteger los pies, especialmente en zonas donde puede haber erizos de mar."
+          ]
+        },
+        labels: {
+          parking: "Parking",
+          idealFor: "Ideal para"
+        },
+        temeni: {
+          name: "Temeni",
+          imageAlt: "Playa de Temeni",
+          description: "Cerca de la zona donde vive la familia de los novios, es una de las opciones que más nos gustan para pasar un día tranquilo en familia.",
+          highlights: [
+            "Snorkel",
+            "Familias",
+            "Niños",
+            "Comer",
+            "Sombra"
+          ],
+          details: [
+            "Agua muy clara, ideal para hacer snorkel.",
+            "Buenas opciones para comer durante el día.",
+            "Árboles y buenas zonas de sombra; adecuada para ir con niños."
+          ],
+          parking: "Disponible · Capacidad media",
+          idealFor: "Familias y un día tranquilo."
+        },
+        valimitika: {
+          name: "Valimitika",
+          imageAlt: "Playa de Valimitika",
+          description: "También está cerca de la zona donde vive la familia de los novios. Una playa tranquila y cómoda para quedarse todo el día.",
+          highlights: [
+            "Snorkel",
+            "Familias",
+            "Niños",
+            "Comer",
+            "Sombra",
+            "Buen parking"
+          ],
+          details: [
+            "Agua muy clara, muy buena para hacer snorkel.",
+            "Opciones para comer durante todo el día.",
+            "Árboles y buenas zonas de sombra; adecuada para familias con niños."
+          ],
+          parking: "Amplio y cómodo",
+          idealFor: "Playa, snorkel y pasar el día con comodidad."
+        },
+        digeliotika: {
+          name: "Digeliotika",
+          imageAlt: "Playa de Digeliotika",
+          description: "Buena opción si buscáis una playa grande con lugares cerca donde comer o tomar algo.",
+          highlights: [
+            "Playa grande",
+            "Comer",
+            "Tomar algo",
+            "Buen parking"
+          ],
+          details: [
+            "Espacio para disfrutar de una playa amplia.",
+            "Menos árboles y sombra que en Temeni o Valimitika."
+          ],
+          parking: "Amplio y cómodo",
+          idealFor: "Quienes buscan una playa amplia con lugares donde comer o tomar algo."
+        },
+        aliki: {
+          name: "Alikes",
+          imageAlt: "Playa de Alikes",
+          description: "Una de las playas de Egio, grande y con un ambiente más juvenil. Nos gusta para pasar muchas horas junto al mar con amigos.",
+          highlights: [
+            "Ambiente",
+            "Amigos",
+            "Restaurantes",
+            "Bares",
+            "Comer",
+            "Buen parking"
+          ],
+          details: [
+            "Muchos restaurantes y bares, con música y ambiente durante el día.",
+            "Menos árboles y sombra natural.",
+            "Los bares suelen permitir pasar tiempo en tumbonas con sombrillas o en mesas próximas al mar."
+          ],
+          parking: "Amplio y cómodo",
+          idealFor: "Pasar el día con amigos, comer y disfrutar de más ambiente.",
+          alternativeName: "Aliki, como la oiréis llamar allí"
+        },
+        akoli: {
+          name: "Akolis",
+          imageAlt: "Playa de Akolis",
+          description: "Nos gusta especialmente al atardecer: ver la puesta de sol, pasear junto al mar y quedarnos a cenar o tomar algo.",
+          highlights: [
+            "Atardecer",
+            "Paseo",
+            "Cena",
+            "Copas",
+            "Ambiente nocturno",
+            "Restaurantes",
+            "Buen parking"
+          ],
+          details: [
+            "Playa grande, también para pasar el día, con un paseo agradable junto a la costa.",
+            "Muchos restaurantes y bares; por la noche podéis comer crepes u otros snacks y salir a tomar algo.",
+            "Menos sombra natural, con tumbonas y sombrillas en los establecimientos de playa."
+          ],
+          parking: "Amplio y cómodo",
+          idealFor: "Atardecer, paseo, cena y ambiente nocturno.",
+          alternativeName: "Akoli, como la oiréis llamar allí"
+        },
+        selianitika: {
+          name: "Selianitika",
+          imageAlt: "Playa de Selianitika",
+          description: "Con un ambiente que recuerda en algunos aspectos a Akoli, es una zona bastante animada para comer, cenar o salir a tomar algo.",
+          highlights: [
+            "Restaurantes",
+            "Cena",
+            "Copas",
+            "Ambiente nocturno",
+            "Animada"
+          ],
+          details: [
+            "Muchos bares y restaurantes, tanto para comer como para cenar.",
+            "El paseo puede resultar menos cómodo porque suele haber bastante tráfico de vehículos."
+          ],
+          parking: "Más limitado · Puede ser más difícil encontrar aparcamiento",
+          idealFor: "Salir a comer, cenar o tomar algo en una zona animada."
+        }
+      }
+    },
+    venue: {
+      title: "Lugar y cómo llegar",
+      subtitle: "Liopetro · Φωνησκαριά",
+      intro: "La celebración tendrá lugar en Liopetro, a las afueras de Egio. Desde el centro de Egio se llega fácilmente en coche o con el autobús que pondremos a disposición de los invitados.",
+      location: {
+        name: "Liopetro",
+        address: "Φωνησκαριά 251 00, Grecia",
+        fromAigio: "Egio → Liopetro",
+        openMaps: "Abrir en Google Maps",
+        mapsPending: "El enlace de Google Maps estará disponible pronto."
+      },
+      car: {
+        title: "En coche",
+        duration: "Unos 10–15 minutos en coche",
+        description: "Desde Egio y sus alrededores es fácil llegar a Liopetro en vehículo propio.",
+        routeFeatures: [
+          "Carreteras locales con algunos tramos estrechos.",
+          "Paso por pequeñas zonas residenciales.",
+          "Trayecto sencillo siguiendo las indicaciones del navegador."
+        ],
+        openRoute: "Abrir ruta en Google Maps",
+        adviceTitle: "Si vienes en coche",
+        advice: [
+          "Si conduces, evita beber alcohol.",
+          "Las carreteras locales pueden ser estrechas. Puede haber peatones por los márgenes o por la calzada, gatos o perros cerca de la carretera y motos circulando, especialmente en zonas residenciales.",
+          "Conduce con calma y respeta siempre los límites de velocidad. Pueden realizarse controles policiales."
+        ],
+        chooseBus: "Si quieres beber durante la fiesta, te recomendamos utilizar el autobús de la boda."
+      },
+      parking: {
+        title: "Parking gratuito y amplio",
+        description: "Liopetro dispone de un parking muy amplio para los invitados.",
+        noReservation: "No es necesario reservar plaza."
+      },
+      bus: {
+        title: "Autobús de la boda",
+        description: "Pondremos un autobús privado para trasladar a los invitados desde el centro de Egio hasta Liopetro y regresar después de la fiesta.",
+        recommended: "El autobús es la opción recomendada para disfrutar de la cena y la fiesta sin preocuparos por conducir.",
+        provisional: "Horario provisional · Por confirmar",
+        confirmed: "Horario confirmado",
+        outbound: {
+          title: "Ida",
+          from: "Estación de autobuses de Egio",
+          to: "Liopetro"
+        },
+        return: {
+          title: "Vuelta",
+          from: "Liopetro",
+          to: "Egio"
+        },
+        confirmationNote: "Los horarios y el punto exacto de salida se confirmarán más adelante. Pueden cambiar."
+      },
+      map: {
+        title: "Ubicación",
+        openMaps: "Ver en Google Maps",
+        iframeTitle: "Ubicación de Liopetro en Google Maps"
+      },
+      photoAlt: "Espacio de celebración de Liopetro"
+    },
     travel: {
       map: {
         title: 'Ruta hasta Egio',
@@ -512,6 +904,202 @@ export const translations = {
     languageSelector: 'Idioma',
   },
   el: {
+    localPlaces: {
+      title: "Μέρη στην περιοχή",
+      beaches: {
+        title: "Παραλίες",
+        intro: "Αυτές είναι μερικές από τις αγαπημένες μας παραλίες στην περιοχή του Αιγίου. Καθεμία έχει διαφορετική ατμόσφαιρα: για μια οικογενειακή μέρα, κολύμπι με μάσκα, φαγητό δίπλα στη θάλασσα ή ηλιοβασίλεμα.",
+        waterShoesNotice: {
+          title: "Πριν πάτε στην παραλία",
+          text: "Στις παραλίες που σας προτείνουμε θα βρείτε κυρίως μικρές πέτρες και βότσαλα αντί για άμμο.",
+          recommendation: "Σας προτείνουμε να έχετε μαζί σας παπούτσια θαλάσσης.",
+          reasons: [
+            "Για να περπατάτε πιο άνετα στις πέτρες.",
+            "Για να προστατεύετε τα πόδια σας, ιδιαίτερα σε σημεία όπου μπορεί να υπάρχουν αχινοί."
+          ]
+        },
+        labels: {
+          parking: "Πάρκινγκ",
+          idealFor: "Ιδανική για"
+        },
+        temeni: {
+          name: "Temeni",
+          imageAlt: "Παραλία Temeni",
+          description: "Κοντά στην περιοχή όπου μένει η οικογένεια του ζευγαριού, είναι από τις επιλογές που μας αρέσουν για μια ήρεμη οικογενειακή μέρα.",
+          highlights: [
+            "Κολύμπι με μάσκα",
+            "Οικογένειες",
+            "Παιδιά",
+            "Φαγητό",
+            "Σκιά"
+          ],
+          details: [
+            "Πολύ καθαρά νερά, ιδανικά για κολύμπι με μάσκα.",
+            "Καλές επιλογές για φαγητό μέσα στη μέρα.",
+            "Αρκετά δέντρα και σκιερά σημεία· κατάλληλη για παιδιά."
+          ],
+          parking: "Διαθέσιμο · Μέτρια χωρητικότητα",
+          idealFor: "Οικογένειες και μια ήρεμη μέρα."
+        },
+        valimitika: {
+          name: "Valimitika",
+          imageAlt: "Παραλία Valimitika",
+          description: "Επίσης κοντά στην περιοχή όπου μένει η οικογένεια του ζευγαριού. Μια ήσυχη και άνετη παραλία για να μείνετε όλη μέρα.",
+          highlights: [
+            "Κολύμπι με μάσκα",
+            "Οικογένειες",
+            "Παιδιά",
+            "Φαγητό",
+            "Σκιά",
+            "Άνετο πάρκινγκ"
+          ],
+          details: [
+            "Πολύ καθαρά νερά, εξαιρετικά για κολύμπι με μάσκα.",
+            "Επιλογές για φαγητό όλη μέρα.",
+            "Αρκετά δέντρα και σκιά· κατάλληλη για οικογένειες με παιδιά."
+          ],
+          parking: "Μεγάλο και άνετο",
+          idealFor: "Παραλία, κολύμπι με μάσκα και μια άνετη μέρα δίπλα στη θάλασσα."
+        },
+        digeliotika: {
+          name: "Digeliotika",
+          imageAlt: "Παραλία Digeliotika",
+          description: "Καλή επιλογή αν ψάχνετε μια μεγάλη παραλία με μέρη κοντά για φαγητό ή για να πιείτε κάτι.",
+          highlights: [
+            "Μεγάλη παραλία",
+            "Φαγητό",
+            "Ποτό",
+            "Άνετο πάρκινγκ"
+          ],
+          details: [
+            "Μεγάλη παραλία με άπλα.",
+            "Λιγότερα δέντρα και σκιά σε σχέση με τις Temeni και Valimitika."
+          ],
+          parking: "Μεγάλο και άνετο",
+          idealFor: "Όσους θέλουν μια μεγάλη παραλία με επιλογές για φαγητό ή ποτό κοντά."
+        },
+        aliki: {
+          name: "Alikes",
+          imageAlt: "Παραλία Alikes",
+          description: "Μία από τις παραλίες του Αιγίου, μεγάλη και με πιο νεανική ατμόσφαιρα. Μας αρέσει για πολλές ώρες δίπλα στη θάλασσα με φίλους.",
+          highlights: [
+            "Ζωντάνια",
+            "Φίλοι",
+            "Εστιατόρια",
+            "Μπαρ",
+            "Φαγητό",
+            "Άνετο πάρκινγκ"
+          ],
+          details: [
+            "Πολλά εστιατόρια και μπαρ, με μουσική και κίνηση μέσα στη μέρα.",
+            "Λιγότερα δέντρα και φυσική σκιά.",
+            "Στα μπαρ συνήθως μπορείτε να καθίσετε σε ξαπλώστρες με ομπρέλες ή σε τραπέζια κοντά στη θάλασσα."
+          ],
+          parking: "Μεγάλο και άνετο",
+          idealFor: "Μια μέρα με φίλους, φαγητό και ζωντανή ατμόσφαιρα.",
+          alternativeName: "Aliki, όπως θα την ακούσετε να τη λένε εκεί"
+        },
+        akoli: {
+          name: "Akolis",
+          imageAlt: "Παραλία Akolis",
+          description: "Μας αρέσει ιδιαίτερα το ηλιοβασίλεμα: βόλτα δίπλα στη θάλασσα και μετά φαγητό ή ποτό.",
+          highlights: [
+            "Ηλιοβασίλεμα",
+            "Βόλτα",
+            "Βραδινό",
+            "Ποτό",
+            "Νυχτερινή ζωή",
+            "Εστιατόρια",
+            "Άνετο πάρκινγκ"
+          ],
+          details: [
+            "Μεγάλη παραλία και για όλη τη μέρα, με ευχάριστη βόλτα κατά μήκος της ακτής.",
+            "Πολλά εστιατόρια και μπαρ· το βράδυ μπορείτε να φάτε κρέπες ή άλλα σνακ και να βγείτε για ποτό.",
+            "Λιγότερη φυσική σκιά, με ξαπλώστρες και ομπρέλες στα παραλιακά μαγαζιά."
+          ],
+          parking: "Μεγάλο και άνετο",
+          idealFor: "Ηλιοβασίλεμα, βόλτα, βραδινό και νυχτερινή ζωή.",
+          alternativeName: "Akoli, όπως θα την ακούσετε να τη λένε εκεί"
+        },
+        selianitika: {
+          name: "Selianitika",
+          imageAlt: "Παραλία Selianitika",
+          description: "Θυμίζει σε ορισμένα σημεία την Akoli, με αρκετή ζωντάνια για φαγητό το μεσημέρι ή το βράδυ και για ποτό.",
+          highlights: [
+            "Εστιατόρια",
+            "Βραδινό",
+            "Ποτό",
+            "Νυχτερινή ζωή",
+            "Ζωντανή ατμόσφαιρα"
+          ],
+          details: [
+            "Πολλά μπαρ και εστιατόρια, για μεσημεριανό αλλά και βραδινό.",
+            "Η βόλτα στην παραλιακή μπορεί να είναι λιγότερο άνετη, καθώς συνήθως υπάρχει αρκετή κίνηση οχημάτων."
+          ],
+          parking: "Πιο περιορισμένο · Ίσως δυσκολευτείτε περισσότερο να βρείτε θέση",
+          idealFor: "Φαγητό ή ποτό σε μια ζωντανή περιοχή, το απόγευμα και το βράδυ."
+        }
+      }
+    },
+    venue: {
+      title: "Τοποθεσία και πρόσβαση",
+      subtitle: "Λιόπετρο · Φωνησκαριά",
+      intro: "Η γιορτή θα γίνει στο Λιόπετρο, λίγο έξω από το Αίγιο. Από το κέντρο του Αιγίου μπορείτε να φτάσετε εύκολα με αυτοκίνητο ή με το λεωφορείο που θα διαθέσουμε για τους καλεσμένους.",
+      location: {
+        name: "Λιόπετρο",
+        address: "Φωνησκαριά 251 00, Ελλάδα",
+        fromAigio: "Αίγιο → Λιόπετρο",
+        openMaps: "Άνοιγμα στο Google Maps",
+        mapsPending: "Ο σύνδεσμος για το Google Maps θα είναι διαθέσιμος σύντομα."
+      },
+      car: {
+        title: "Με αυτοκίνητο",
+        duration: "Περίπου 10–15 λεπτά με αυτοκίνητο",
+        description: "Από το Αίγιο και τις γύρω περιοχές η πρόσβαση στο Λιόπετρο με αυτοκίνητο είναι εύκολη.",
+        routeFeatures: [
+          "Τοπικοί δρόμοι με ορισμένα στενά σημεία.",
+          "Διέλευση από μικρές κατοικημένες περιοχές.",
+          "Εύκολη διαδρομή ακολουθώντας τις οδηγίες πλοήγησης."
+        ],
+        openRoute: "Άνοιγμα διαδρομής στο Google Maps",
+        adviceTitle: "Αν έρθετε με αυτοκίνητο",
+        advice: [
+          "Αν οδηγείτε, αποφύγετε το αλκοόλ.",
+          "Οι τοπικοί δρόμοι μπορεί να είναι στενοί. Ενδέχεται να συναντήσετε πεζούς στην άκρη ή πάνω στον δρόμο, γάτες ή σκύλους κοντά στον δρόμο και μηχανάκια, ιδιαίτερα στις κατοικημένες περιοχές.",
+          "Οδηγείτε ήρεμα και τηρείτε πάντα τα όρια ταχύτητας. Μπορεί να γίνονται αστυνομικοί έλεγχοι."
+        ],
+        chooseBus: "Αν θέλετε να πιείτε στη γιορτή, σας προτείνουμε το λεωφορείο του γάμου."
+      },
+      parking: {
+        title: "Δωρεάν και ευρύχωρο πάρκινγκ",
+        description: "Το Λιόπετρο διαθέτει πολύ μεγάλο χώρο στάθμευσης για τους καλεσμένους.",
+        noReservation: "Δεν χρειάζεται κράτηση θέσης."
+      },
+      bus: {
+        title: "Λεωφορείο του γάμου",
+        description: "Θα διαθέσουμε ιδιωτικό λεωφορείο για τη μεταφορά των καλεσμένων από το κέντρο του Αιγίου στο Λιόπετρο και την επιστροφή μετά τη γιορτή.",
+        recommended: "Σας προτείνουμε το λεωφορείο για να απολαύσετε το δείπνο και τη γιορτή χωρίς να ανησυχείτε για την οδήγηση.",
+        provisional: "Προσωρινό ωράριο · Προς επιβεβαίωση",
+        confirmed: "Επιβεβαιωμένο ωράριο",
+        outbound: {
+          title: "Μετάβαση",
+          from: "Σταθμός λεωφορείων Αιγίου",
+          to: "Λιόπετρο"
+        },
+        return: {
+          title: "Επιστροφή",
+          from: "Λιόπετρο",
+          to: "Αίγιο"
+        },
+        confirmationNote: "Οι ώρες και το ακριβές σημείο αναχώρησης θα επιβεβαιωθούν αργότερα και ενδέχεται να αλλάξουν."
+      },
+      map: {
+        title: "Τοποθεσία",
+        openMaps: "Προβολή στο Google Maps",
+        iframeTitle: "Τοποθεσία του Λιόπετρου στο Google Maps"
+      },
+      photoAlt: "Ο χώρος εκδηλώσεων στο Λιόπετρο"
+    },
     travel: {
       map: {
         title: 'Διαδρομή προς το Αίγιο',

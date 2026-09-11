@@ -1,1 +1,70 @@
-/* Reservado para los estilos específicos de Venue. */
+.venue-page {
+  display: grid;
+  gap: 1.5rem;
+  padding-bottom: 1rem;
+}
+
+.venue-page h1,
+.venue-page h2,
+.venue-page h3 {
+  margin: 0 0 1rem;
+  color: var(--color-blue-dark);
+  font-family: var(--font-heading);
+  font-weight: 400;
+  line-height: 1.25;
+}
+
+.venue-page h1 { font-size: clamp(2rem, 6vw, 2.75rem); }
+.venue-page h2 { font-size: clamp(1.5rem, 4vw, 1.875rem); }
+.venue-page h3 { font-size: 1.25rem; }
+.venue-page p { margin: 0 0 1rem; }
+.venue-page ul { padding-left: 1.25rem; margin: 0 0 1rem; }
+.venue-page li + li { margin-top: 0.5rem; }
+.venue-page p:last-child { margin-bottom: 0; }
+
+.venue-intro,
+.venue-driving-advice { max-width: 48rem; }
+.venue-subtitle { font-size: 1.125rem; color: var(--color-olive-dark); }
+
+.venue-panel {
+  min-width: 0;
+  padding: 1rem;
+  border: 1px solid var(--color-gold-soft);
+  border-radius: 0.25rem;
+  background: var(--color-paper);
+}
+
+.venue-location .venue-duration { margin-top: 1rem; }
+.venue-transport-options { display: grid; gap: 1.5rem; }
+.venue-private-bus { border-top: 4px solid var(--color-olive); }
+.venue-bus-recommendation { color: var(--color-olive-dark); }
+
+.venue-bus-schedule {
+  padding: 1rem;
+  border: 2px solid var(--color-gold);
+  background: var(--color-ivory);
+}
+
+.venue-schedule-badge {
+  display: inline-block;
+  padding: 0.5rem 0.75rem;
+  background: var(--color-text);
+  color: var(--color-white);
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.venue-bus-journeys { display: grid; gap: 1rem; }
+.venue-bus-journey { min-width: 0; }
+.venue-bus-journey + .venue-bus-journey { border-top: 1px solid var(--color-gold-soft); padding-top: 1rem; }
+.venue-bus-journey p { margin-bottom: 0.25rem; }
+.venue-bus-time { font-size: 2rem; font-weight: 700; color: var(--color-blue-dark); }
+.venue-route-arrow { display: block; font-size: 1.5rem; }
+.venue-page .venue-confirmation-note { margin-top: 1rem; font-weight: 600; }
+.venue-parking { border-left: 4px solid var(--color-olive); }
+.venue-photo { width: 100%; max-width: 48rem; border-radius: 0.25rem; }
+
+@media (min-width: 52rem) {
+  .venue-transport-options { grid-template-columns: repeat(2, minmax(0, 1fr)); align-items: start; }
+  .venue-panel { padding: 1.5rem; }
+}

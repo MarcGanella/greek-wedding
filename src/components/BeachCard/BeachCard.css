@@ -1,0 +1,41 @@
+.beach-card {
+  min-width: 0;
+  border: 1px solid var(--color-gold-soft);
+  border-radius: 0.25rem;
+  background: var(--color-paper);
+}
+
+.beach-card__image {
+  display: block;
+  width: 100%;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+  border-radius: 0.25rem 0.25rem 0 0;
+}
+
+.beach-card__body { padding: 1rem; }
+.beach-card__alternative { color: var(--color-text-soft); font-size: 0.875rem; }
+
+.beach-card__highlights {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  padding: 0;
+  margin: 0 0 1rem;
+  list-style: none;
+}
+
+.beach-card__highlights li {
+  padding: 0.25rem 0.625rem;
+  border-radius: 0.25rem;
+  background: var(--color-ivory);
+  color: var(--color-olive-dark);
+  font-size: 0.875rem;
+}
+
+.beach-card__details { padding-left: 1.25rem; margin: 0 0 1rem; }
+.beach-card__details li + li { margin-top: 0.5rem; }
+.beach-card__facts { margin: 0; border-top: 1px solid var(--color-gold-soft); padding-top: 1rem; }
+.beach-card__facts div + div { margin-top: 1rem; }
+.beach-card__facts dt { font-weight: 700; color: var(--color-blue-dark); }
+.beach-card__facts dd { margin: 0.25rem 0 0; }
