@@ -1,1 +1,97 @@
-/* Reservado para los estilos específicos de Program. */
+.program-page {
+  display: grid;
+  gap: 1.5rem;
+  max-width: 48rem;
+  padding-bottom: 1rem;
+}
+
+.program-page h1,
+.program-page h2,
+.program-page h3 {
+  margin: 0 0 1rem;
+  color: var(--color-blue-dark);
+  font-family: var(--font-heading);
+  font-weight: 400;
+  line-height: 1.25;
+}
+
+.program-page h1 { font-size: clamp(2rem, 6vw, 2.75rem); }
+.program-page h2 { font-size: clamp(1.5rem, 4vw, 1.875rem); }
+.program-page h3 { margin-bottom: 0; font-size: 1.25rem; }
+.program-page p { margin: 0 0 1rem; }
+.program-page p:last-child { margin-bottom: 0; }
+.program-subtitle { color: var(--color-olive-dark); font-size: 1.125rem; }
+
+.program-provisional {
+  display: inline-block;
+  padding: 0.5rem 0.75rem;
+  background: var(--color-text);
+  color: var(--color-white);
+  font-size: 0.875rem;
+  font-weight: 700;
+  letter-spacing: 0.025em;
+  text-transform: uppercase;
+}
+
+.program-dress-code,
+.program-note {
+  padding: 1rem;
+  border: 1px solid var(--color-gold-soft);
+  border-left: 4px solid var(--color-olive);
+  border-radius: 0.25rem;
+  background: var(--color-paper);
+}
+
+.program-timeline {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.program-timeline-item {
+  position: relative;
+  min-width: 0;
+  padding: 0 0 1.5rem 2.25rem;
+}
+
+.program-timeline-item::before {
+  position: absolute;
+  top: 0.45rem;
+  left: 0.35rem;
+  width: 0.75rem;
+  height: 0.75rem;
+  border: 2px solid var(--color-olive);
+  border-radius: 50%;
+  background: var(--color-ivory);
+  content: '';
+}
+
+.program-timeline-item:not(:last-child)::after {
+  position: absolute;
+  top: 1.35rem;
+  bottom: 0;
+  left: 0.77rem;
+  width: 2px;
+  background: var(--color-gold-soft);
+  content: '';
+}
+
+.program-time {
+  display: block;
+  margin-bottom: 0.25rem;
+  color: var(--color-blue-dark);
+  font-size: clamp(1.75rem, 7vw, 2.25rem);
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.program-note { border-left-color: var(--color-gold); }
+
+@media (min-width: 40rem) {
+  .program-dress-code,
+  .program-note { padding: 1.5rem; }
+
+  .program-timeline-item { padding-left: 3rem; }
+  .program-timeline-item::before { left: 0.75rem; }
+  .program-timeline-item:not(:last-child)::after { left: 1.17rem; }
+}

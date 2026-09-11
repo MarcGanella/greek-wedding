@@ -1,5 +1,25 @@
 export const translations = {
   ca: {
+    program: {
+      title: "Programa",
+      subtitle: "El dia del casament",
+      provisional: "Horari provisional",
+      provisionalNote: "Els horaris definitius es confirmaran més endavant.",
+      dressCode: {
+        title: "Què posar-se",
+        text: "Veniu arreglats, però sobretot còmodes. Serà agost a Grècia i pot fer força calor, així que recomanem roba elegant, fresca i lleugera.",
+        note: "Les millors gales, sí; patir per elles, no."
+      },
+      scheduleTitle: "Horari del dia",
+      schedule: {
+        welcome: "Benvinguda",
+        ceremony: "Cerimònia",
+        aperitif: "Aperitiu",
+        dinner: "Sopar",
+        party: "Festa",
+        departure: "Final de la celebració · Autobús de tornada a Egio"
+      }
+    },
     localPlaces: {
       title: "Llocs de la zona",
       beaches: {
@@ -452,6 +472,26 @@ export const translations = {
     languageSelector: 'Idioma',
   },
   es: {
+    program: {
+      title: "Programa",
+      subtitle: "El día de la boda",
+      provisional: "Horario provisional",
+      provisionalNote: "Los horarios definitivos se confirmarán más adelante.",
+      dressCode: {
+        title: "Qué ponerse",
+        text: "Venid arreglados, pero sobre todo cómodos. Será agosto en Grecia y puede hacer bastante calor, así que recomendamos ropa elegante, fresca y ligera.",
+        note: "Las mejores galas, sí; sufrir por ellas, no."
+      },
+      scheduleTitle: "Horario del día",
+      schedule: {
+        welcome: "Bienvenida",
+        ceremony: "Ceremonia",
+        aperitif: "Aperitivo",
+        dinner: "Cena",
+        party: "Fiesta",
+        departure: "Fin de la celebración · Autobús de regreso a Egio"
+      }
+    },
     localPlaces: {
       title: "Sitios de la zona",
       beaches: {
@@ -904,6 +944,26 @@ export const translations = {
     languageSelector: 'Idioma',
   },
   el: {
+    program: {
+      title: "Πρόγραμμα",
+      subtitle: "Η ημέρα του γάμου",
+      provisional: "Προσωρινό πρόγραμμα",
+      provisionalNote: "Οι οριστικές ώρες θα επιβεβαιωθούν αργότερα.",
+      dressCode: {
+        title: "Τι να φορέσετε",
+        text: "Ελάτε κομψοί, αλλά πάνω απ’ όλα άνετοι. Θα είναι Αύγουστος στην Ελλάδα και μπορεί να έχει αρκετή ζέστη, γι’ αυτό προτείνουμε κομψά, δροσερά και ελαφριά ρούχα.",
+        note: "Τα καλά σας, ναι· η ταλαιπωρία, όχι."
+      },
+      scheduleTitle: "Πρόγραμμα ημέρας",
+      schedule: {
+        welcome: "Υποδοχή",
+        ceremony: "Τελετή",
+        aperitif: "Απεριτίφ",
+        dinner: "Δείπνο",
+        party: "Πάρτι",
+        departure: "Τέλος της γιορτής · Λεωφορείο επιστροφής στο Αίγιο"
+      }
+    },
     localPlaces: {
       title: "Μέρη στην περιοχή",
       beaches: {
