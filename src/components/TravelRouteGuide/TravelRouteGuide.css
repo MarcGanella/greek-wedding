@@ -1,0 +1,93 @@
+.travel-guide {
+  max-width: 50rem;
+  margin: 1.5rem auto 0;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--color-gold-soft);
+}
+
+.travel-guide-subtitle {
+  color: var(--color-blue-dark);
+  font-size: 1.125rem;
+}
+
+.travel-guide-disclaimer,
+.travel-guide-note {
+  color: var(--color-text-soft);
+  font-size: 0.9375rem;
+}
+
+.travel-guide-details > summary {
+  min-height: 2.75rem;
+  padding: 0.75rem;
+  background: var(--color-ivory);
+  color: var(--color-blue);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.travel-guide-details > summary:focus-visible {
+  outline: 2px solid var(--color-blue);
+  outline-offset: 3px;
+}
+
+.travel-guide-close-label,
+.travel-guide-details[open] .travel-guide-open-label {
+  display: none;
+}
+
+.travel-guide-details[open] .travel-guide-close-label {
+  display: inline;
+}
+
+.travel-guide-steps {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.travel-guide-step {
+  padding-block: 1.5rem;
+  border-bottom: 1px solid var(--color-gold-soft);
+}
+
+.travel-guide-step:last-child {
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+
+.travel-guide-number {
+  color: var(--color-olive-dark);
+  font-weight: 700;
+}
+
+.travel-guide-step img {
+  display: block;
+  width: 100%;
+  max-width: 36rem;
+  height: auto;
+  margin: 1rem auto;
+}
+
+.travel-guide-highlight {
+  color: var(--color-blue-dark);
+}
+
+.travel-guide-buses {
+  display: grid;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.travel-guide-buses > div {
+  border-inline-start: 3px solid var(--color-olive);
+  padding-inline-start: 0.75rem;
+}
+
+.travel-guide-buses dt strong {
+  color: var(--color-blue-dark);
+  font-size: 1.125rem;
+}
+
+.travel-guide-buses p:last-child {
+  margin-bottom: 0;
+}

@@ -1,5 +1,34 @@
 export const translations = {
   ca: {
+    home: {
+      couplePhotoAlt: "Eleanna i Marc",
+      welcome: {
+        title: "Benvinguts al nostre casament a Grècia",
+        intro: "Si heu rebut aquest enllaç, és perquè ens fa moltíssima il·lusió poder compartir aquest dia amb vosaltres.",
+        description: "Aquí hi trobareu informació sobre com arribar-hi, les diferents opcions de viatge, llocs que recomanem per la zona i tots els detalls i horaris del casament.",
+        closing: "Us esperem amb moltíssima il·lusió."
+      },
+      guide: {
+        title: "En aquesta guia hi trobareu",
+        travel: {
+          title: "Viatge a Grècia",
+          description: "Opcions per arribar fins a Egio."
+        },
+        venue: {
+          title: "Lloc i com arribar-hi",
+          description: "On celebrem el casament i com arribar a Liopetro."
+        },
+        program: {
+          title: "Programa",
+          description: "Horaris provisionals del dia del casament."
+        },
+        localPlaces: {
+          title: "Llocs de la zona",
+          description: "Platges i llocs que ens agraden a prop d’Egio."
+        }
+      },
+      finalMessage: "Ens veiem a Grècia."
+    },
     program: {
       title: "Programa",
       subtitle: "El dia del casament",
@@ -21,6 +50,33 @@ export const translations = {
       }
     },
     localPlaces: {
+      aigio: {
+        "name": "Egio",
+        "subtitle": "La ciutat principal de la zona",
+        "intro": "I per últim, però no menys important: Egio. És la ciutat principal de la zona i val la pena dedicar una estona a conèixer-la.",
+        "upperTown": {
+          "title": "El centre i la part alta",
+          "description": "A la part alta hi trobareu el centre d’Egio, amb la plaça i el parc principals. És una zona agradable per passejar, prendre alguna cosa o sopar, i des d’alguns punts hi ha molt bones vistes de la costa.",
+          "highlights": [
+            "Centre",
+            "Vistes",
+            "Sopar"
+          ]
+        },
+        "seafront": {
+          "title": "El passeig marítim",
+          "description": "També podeu baixar des del centre fins a la part baixa de la ciutat i passejar al costat del mar. Al passeig marítim hi ha molts bars i restaurants i és una molt bona opció per dinar, sopar o prendre alguna cosa.",
+          "highlights": [
+            "Passeig marítim",
+            "Restaurants",
+            "Bars"
+          ]
+        },
+        "idealForLabel": "Ideal per a",
+        "idealFor": "Fer un passeig per la ciutat, gaudir de les vistes i acabar menjant o prenent alguna cosa al costat del mar.",
+        "imageAlt1": "Vista des d’Egio del mar, un moll i un vaixell, amb muntanyes al fons",
+        "imageAlt2": "Vista dels edificis i les teulades d’Egio al costat del mar, amb la costa i muntanyes al fons"
+      },
       title: "Llocs de la zona",
       beaches: {
         title: "Platges",
@@ -217,6 +273,120 @@ export const translations = {
       photoAlt: "Espai de celebració de Liopetro"
     },
     travel: {
+      economicGuide: {
+        "title": "Guia pas a pas",
+        "subtitle": "Aeroport d’Atenes → Egio",
+        "stepCount": "11 passos · 10 fotografies",
+        "openGuide": "Veure la guia pas a pas",
+        "closeGuide": "Tancar la guia pas a pas",
+        "stepLabel": "PAS {number} DE {total}",
+        "disclaimer": "Preus, freqüències i horaris orientatius. Us recomanem comprovar la informació actualitzada abans del viatge.",
+        "steps": {
+          "step1": {
+            "title": "Compra el bitllet de l’autobús",
+            "paragraphs": [
+              "En sortir de l’aeroport d’Atenes, segueix les indicacions cap als autobusos. A l’exterior trobaràs les finestretes Travel Tickets.",
+              "Compra-hi el bitllet dels autobusos de l’aeroport. No cal indicar una destinació concreta: aquests autobusos tenen una tarifa única."
+            ],
+            "alt": "Finestreta Travel Tickets de l’aeroport d’Atenes per comprar el bitllet de l’autobús",
+            "highlight": "5,50 € aprox.",
+            "note": "Preu aproximat · pot canviar."
+          },
+          "step2": {
+            "title": "Busca el bus X93",
+            "paragraphs": [
+              "A prop de les finestretes trobaràs la parada del X93. És l’autobús que recomanem per continuar directament cap a Egio.",
+              "El X93 no passa pel centre d’Atenes. Vols visitar primer el centre? En aquest cas, agafa el X95 cap a la plaça Syntagma."
+            ],
+            "alt": "Senyal de la parada del X93 a l’aeroport d’Atenes",
+            "busOptions": [
+              {
+                "line": "X93",
+                "route": "Aeroport → KTEL de Kifissos → continuar cap a Egio",
+                "note": "Recomanat per anar directament cap a Egio; a KTEL cal canviar d’autobús."
+              },
+              {
+                "line": "X95",
+                "route": "Aeroport → plaça Syntagma → centre d’Atenes",
+                "note": "Per visitar Atenes primer. Després hauràs d’organitzar el trasllat fins a KTEL per continuar cap a Egio."
+              }
+            ]
+          },
+          "step3": {
+            "title": "Baixa a l’última parada",
+            "paragraphs": [
+              "Queda’t al X93 fins a l’última parada: l’estació d’autobusos KTEL de Kifissos, a Atenes. Aquí s’acaba aquest primer trajecte."
+            ],
+            "alt": "Zona coberta d’autobusos de l’estació KTEL de Kifissos, al final del trajecte del X93",
+            "highlight": "Última parada · KTEL de Kifissos"
+          },
+          "step4": {
+            "title": "Busca «Tickets Office»",
+            "paragraphs": [
+              "Un cop a KTEL, busca l’edifici o la zona amb el rètol Tickets Office. Aquí compraràs el bitllet per continuar fins a Egio."
+            ],
+            "alt": "Entrada de la zona de venda de bitllets amb el rètol Tickets Office",
+            "highlight": "Tickets Office"
+          },
+          "step5": {
+            "title": "Segueix el passadís",
+            "paragraphs": [
+              "Continua pel passadís llarg que porta a la zona de venda de bitllets. La fotografia t’ajudarà a orientar-te."
+            ],
+            "alt": "Passadís llarg amb línies de colors a terra que porta cap a les taquilles"
+          },
+          "step6": {
+            "title": "Entra al vestíbul",
+            "paragraphs": [
+              "En arribar al vestíbul, busca la finestreta que hi ha a prop de la columna de la fotografia. Allà podràs comprar el bitllet cap a Egio."
+            ],
+            "alt": "Vestíbul de les taquilles de KTEL amb la columna com a punt de referència"
+          },
+          "step7": {
+            "title": "Compra el bitllet per a Egio",
+            "paragraphs": [
+              "Busca la finestreta amb destinacions com Patra, Aegion, Kalavrita i Akrata. Demana un bitllet per a Egio / Aegion.",
+              "Egio es pronuncia aproximadament «Éyio».",
+              "Pregunta també pel bitllet d’anada i tornada: pot haver-hi una tarifa amb descompte."
+            ],
+            "alt": "Finestreta amb els noms Patra, Aegion, Kalavrita i Akrata",
+            "highlight": "≈ 30 € anada i tornada · preu orientatiu",
+            "note": "Les tarifes i els horaris poden canviar. Confirma el preu i les condicions de tornada a la taquilla."
+          },
+          "step8": {
+            "title": "Busca el teu autobús",
+            "paragraphs": [
+              "Ves a l’autobús a l’hora indicada al bitllet. La zona de sortida que vam utilitzar és davant o a prop de la llibreria que es veu a la fotografia."
+            ],
+            "alt": "Zona de sortida dels autobusos al costat de la llibreria de l’estació",
+            "note": "Segons la nostra experiència, hi sol haver serveis aproximadament cada hora, però és orientatiu i pot canviar. Confirma sempre l’horari i el punt de sortida."
+          },
+          "step9": {
+            "title": "Comprova que és l’autobús correcte",
+            "paragraphs": [
+              "Busca la indicació Achaia. L’autobús pot mostrar Patra / Patras com a destinació principal, tot i que faci parada a Egio.",
+              "Abans de pujar-hi, confirma amb el conductor o el personal que para a Egio. Normalment us podran orientar en anglès bàsic."
+            ],
+            "alt": "Rètol Achaia sobre un autobús que indica Patra com a destinació",
+            "highlight": "Achaia · Patra / Patras · confirma la parada a Egio"
+          },
+          "step10": {
+            "title": "Relaxa’t i gaudeix del viatge",
+            "paragraphs": [
+              "El trajecte dura aproximadament dues hores. Després de tants passos, toca seure i gaudir del paisatge: el mar, el pas pel canal de Corint, el golf de Corint i la costa del Peloponès."
+            ],
+            "alt": "Vistes del mar i de la costa des de l’autobús cap a Egio",
+            "highlight": "≈ 2 h de trajecte"
+          },
+          "step11": {
+            "title": "Ja ets a Egio!",
+            "paragraphs": [
+              "Baixa a l’estació d’autobusos del centre d’Egio.",
+              "Farem tot el possible per ser-hi i donar-vos la benvinguda."
+            ]
+          }
+        }
+      },
       map: {
         title: 'Ruta fins a Egio',
         chooseRoute: 'Mostra una ruta',
@@ -472,6 +642,35 @@ export const translations = {
     languageSelector: 'Idioma',
   },
   es: {
+    home: {
+      couplePhotoAlt: "Eleanna y Marc",
+      welcome: {
+        title: "Bienvenidos a nuestra boda en Grecia",
+        intro: "Si habéis recibido este enlace, es porque nos hace muchísima ilusión contar con vosotros en este día.",
+        description: "Aquí encontraréis información sobre cómo llegar, las distintas opciones de viaje, lugares que recomendamos por la zona y todos los detalles y horarios de la boda.",
+        closing: "Os esperamos con muchísima ilusión."
+      },
+      guide: {
+        title: "En esta guía encontraréis",
+        travel: {
+          title: "Viaje a Grecia",
+          description: "Opciones para llegar hasta Egio."
+        },
+        venue: {
+          title: "Lugar y cómo llegar",
+          description: "Dónde celebramos la boda y cómo llegar a Liopetro."
+        },
+        program: {
+          title: "Programa",
+          description: "Horarios provisionales del día de la boda."
+        },
+        localPlaces: {
+          title: "Sitios de la zona",
+          description: "Playas y lugares que nos gustan cerca de Egio."
+        }
+      },
+      finalMessage: "Nos vemos en Grecia."
+    },
     program: {
       title: "Programa",
       subtitle: "El día de la boda",
@@ -493,6 +692,33 @@ export const translations = {
       }
     },
     localPlaces: {
+      aigio: {
+        "name": "Egio",
+        "subtitle": "La ciudad principal de la zona",
+        "intro": "Y por último, pero no menos importante: Egio. Es la ciudad principal de la zona y merece la pena dedicar un rato a conocerla.",
+        "upperTown": {
+          "title": "El centro y la parte alta",
+          "description": "En la parte alta se encuentra el centro de Egio, con su plaza y parque principales. Es una zona agradable para pasear, tomar algo o cenar y desde algunos puntos se disfrutan muy buenas vistas de la costa.",
+          "highlights": [
+            "Centro",
+            "Vistas",
+            "Cena"
+          ]
+        },
+        "seafront": {
+          "title": "El paseo marítimo",
+          "description": "También podéis bajar desde el centro hasta la parte baja de la ciudad y pasear junto al mar. En la zona del paseo marítimo encontraréis numerosos bares y restaurantes y es una buena opción para comer, cenar o tomar algo.",
+          "highlights": [
+            "Paseo marítimo",
+            "Restaurantes",
+            "Bares"
+          ]
+        },
+        "idealForLabel": "Ideal para",
+        "idealFor": "Dar un paseo por la ciudad, disfrutar de las vistas y terminar comiendo o tomando algo junto al mar.",
+        "imageAlt1": "Vista desde Egio del mar, un muelle y un barco, con montañas al fondo",
+        "imageAlt2": "Vista de los edificios y tejados de Egio junto al mar, con la costa y montañas al fondo"
+      },
       title: "Sitios de la zona",
       beaches: {
         title: "Playas",
@@ -689,6 +915,120 @@ export const translations = {
       photoAlt: "Espacio de celebración de Liopetro"
     },
     travel: {
+      economicGuide: {
+        "title": "Guía paso a paso",
+        "subtitle": "Aeropuerto de Atenas → Egio",
+        "stepCount": "11 pasos · 10 fotografías",
+        "openGuide": "Ver guía paso a paso",
+        "closeGuide": "Cerrar guía paso a paso",
+        "stepLabel": "PASO {number} DE {total}",
+        "disclaimer": "Precios, frecuencias y horarios orientativos. Recomendamos comprobar la información actualizada antes del viaje.",
+        "steps": {
+          "step1": {
+            "title": "Compra el billete del autobús",
+            "paragraphs": [
+              "Al salir del aeropuerto de Atenas, sigue las indicaciones hacia los autobuses. En el exterior encontrarás las ventanillas Travel Tickets.",
+              "Compra allí el billete de los autobuses del aeropuerto. No hace falta indicar un destino concreto: estos autobuses tienen una tarifa única."
+            ],
+            "alt": "Ventanilla Travel Tickets del aeropuerto de Atenas para comprar el billete del autobús",
+            "highlight": "5,50 € aprox.",
+            "note": "Precio aproximado · puede cambiar."
+          },
+          "step2": {
+            "title": "Busca el bus X93",
+            "paragraphs": [
+              "Cerca de las ventanillas encontrarás la parada del X93. Es el autobús que recomendamos para continuar directamente hacia Egio.",
+              "El X93 no pasa por el centro de Atenas. ¿Quieres visitar primero el centro? En ese caso, toma el X95 hacia la plaza Syntagma."
+            ],
+            "alt": "Señal de la parada del X93 en el aeropuerto de Atenas",
+            "busOptions": [
+              {
+                "line": "X93",
+                "route": "Aeropuerto → KTEL de Kifissos → continuar hacia Egio",
+                "note": "Recomendado para ir directamente hacia Egio; en KTEL hay que cambiar de autobús."
+              },
+              {
+                "line": "X95",
+                "route": "Aeropuerto → plaza Syntagma → centro de Atenas",
+                "note": "Para visitar Atenas primero. Después tendrás que organizar el traslado a KTEL para continuar hacia Egio."
+              }
+            ]
+          },
+          "step3": {
+            "title": "Baja en la última parada",
+            "paragraphs": [
+              "Permanece en el X93 hasta la última parada: la estación de autobuses KTEL de Kifissos, en Atenas. Aquí termina este primer trayecto."
+            ],
+            "alt": "Zona cubierta de autobuses de la estación KTEL de Kifissos, al final del recorrido del X93",
+            "highlight": "Última parada · KTEL de Kifissos"
+          },
+          "step4": {
+            "title": "Busca «Tickets Office»",
+            "paragraphs": [
+              "Una vez en KTEL, busca el edificio o la zona con el cartel Tickets Office. Aquí comprarás el billete para continuar hasta Egio."
+            ],
+            "alt": "Entrada a la zona de venta de billetes con el cartel Tickets Office",
+            "highlight": "Tickets Office"
+          },
+          "step5": {
+            "title": "Sigue el pasillo",
+            "paragraphs": [
+              "Continúa por el pasillo largo que lleva a la zona de venta de billetes. La fotografía te ayudará a orientarte."
+            ],
+            "alt": "Pasillo largo con líneas de colores en el suelo que lleva hacia las taquillas"
+          },
+          "step6": {
+            "title": "Entra en el vestíbulo",
+            "paragraphs": [
+              "Al llegar al vestíbulo, busca la ventanilla situada cerca de la columna de la fotografía. Allí podrás comprar el billete hacia Egio."
+            ],
+            "alt": "Vestíbulo de las taquillas de KTEL con la columna como punto de referencia"
+          },
+          "step7": {
+            "title": "Compra el billete para Egio",
+            "paragraphs": [
+              "Busca la ventanilla con destinos como Patra, Aegion, Kalavrita y Akrata. Pide un billete para Egio / Aegion.",
+              "Egio se pronuncia aproximadamente «Éyio».",
+              "Pregunta también por el billete de ida y vuelta: puede existir una tarifa con descuento."
+            ],
+            "alt": "Ventanilla con los nombres Patra, Aegion, Kalavrita y Akrata",
+            "highlight": "≈ 30 € ida y vuelta · precio orientativo",
+            "note": "Las tarifas y los horarios pueden cambiar. Confirma el precio y las condiciones de vuelta en la taquilla."
+          },
+          "step8": {
+            "title": "Busca tu autobús",
+            "paragraphs": [
+              "Dirígete al autobús a la hora indicada en el billete. La zona de salida que utilizamos está delante o cerca de la librería que aparece en la fotografía."
+            ],
+            "alt": "Zona de salida de los autobuses junto a la librería de la estación",
+            "note": "Según nuestra experiencia, suele haber servicios aproximadamente cada hora, pero es orientativo y puede cambiar. Confirma siempre el horario y el punto de salida."
+          },
+          "step9": {
+            "title": "Comprueba que es el autobús correcto",
+            "paragraphs": [
+              "Busca la indicación Achaia. El autobús puede mostrar Patra / Patras como destino principal, aunque haga parada en Egio.",
+              "Antes de subir, confirma con el conductor o el personal que para en Egio. Normalmente podrán orientaros en inglés básico."
+            ],
+            "alt": "Cartel Achaia sobre un autobús que indica Patra como destino",
+            "highlight": "Achaia · Patra / Patras · confirma la parada en Egio"
+          },
+          "step10": {
+            "title": "Relájate y disfruta del viaje",
+            "paragraphs": [
+              "El trayecto dura aproximadamente dos horas. Después de tantos pasos, toca sentarse y disfrutar del paisaje: el mar, el paso por el canal de Corinto, el golfo de Corinto y la costa del Peloponeso."
+            ],
+            "alt": "Vistas del mar y de la costa desde el autobús hacia Egio",
+            "highlight": "≈ 2 h de trayecto"
+          },
+          "step11": {
+            "title": "¡Ya estás en Egio!",
+            "paragraphs": [
+              "Baja en la estación de autobuses del centro de Egio.",
+              "Haremos todo lo posible para estar allí y daros la bienvenida."
+            ]
+          }
+        }
+      },
       map: {
         title: 'Ruta hasta Egio',
         chooseRoute: 'Mostrar una ruta',
@@ -944,6 +1284,35 @@ export const translations = {
     languageSelector: 'Idioma',
   },
   el: {
+    home: {
+      couplePhotoAlt: "Eleanna και Marc",
+      welcome: {
+        title: "Καλώς ήρθατε στον γάμο μας στην Ελλάδα",
+        intro: "Σας στείλαμε αυτόν τον σύνδεσμο γιατί θα χαρούμε πολύ να μοιραστούμε αυτή τη μέρα μαζί σας.",
+        description: "Εδώ θα βρείτε πληροφορίες για το πώς θα έρθετε, τις επιλογές για το ταξίδι σας, μέρη που αγαπάμε στην περιοχή και όλες τις λεπτομέρειες και το πρόγραμμα του γάμου.",
+        closing: "Σας περιμένουμε με πολλή χαρά!"
+      },
+      guide: {
+        title: "Σε αυτόν τον οδηγό θα βρείτε",
+        travel: {
+          title: "Ταξίδι στην Ελλάδα",
+          description: "Επιλογές για να φτάσετε στο Αίγιο."
+        },
+        venue: {
+          title: "Τοποθεσία και πρόσβαση",
+          description: "Πού θα γιορτάσουμε τον γάμο μας και πώς θα φτάσετε στο Λιόπετρο."
+        },
+        program: {
+          title: "Πρόγραμμα",
+          description: "Το προσωρινό πρόγραμμα της ημέρας του γάμου."
+        },
+        localPlaces: {
+          title: "Μέρη στην περιοχή",
+          description: "Παραλίες και αγαπημένα μας μέρη κοντά στο Αίγιο."
+        }
+      },
+      finalMessage: "Τα λέμε στην Ελλάδα!"
+    },
     program: {
       title: "Πρόγραμμα",
       subtitle: "Η ημέρα του γάμου",
@@ -965,6 +1334,33 @@ export const translations = {
       }
     },
     localPlaces: {
+      aigio: {
+        "name": "Αίγιο",
+        "subtitle": "Η κύρια πόλη της περιοχής",
+        "intro": "Και για το τέλος, κρατήσαμε το Αίγιο! Είναι η κύρια πόλη της περιοχής και αξίζει να αφιερώσετε λίγο χρόνο για να τη γνωρίσετε.",
+        "upperTown": {
+          "title": "Το κέντρο και η πάνω πόλη",
+          "description": "Στην πάνω πλευρά της πόλης βρίσκεται το κέντρο του Αιγίου, με την κεντρική πλατεία και το κεντρικό πάρκο. Είναι ωραία περιοχή για βόλτα, για να πιείτε κάτι ή να βγείτε για φαγητό το βράδυ. Από ορισμένα σημεία θα απολαύσετε πολύ όμορφη θέα προς την ακτή.",
+          "highlights": [
+            "Κέντρο",
+            "Θέα",
+            "Βραδινό φαγητό"
+          ]
+        },
+        "seafront": {
+          "title": "Η παραλιακή βόλτα",
+          "description": "Μπορείτε επίσης να κατεβείτε από το κέντρο στο κάτω μέρος της πόλης και να περπατήσετε δίπλα στη θάλασσα. Στην παραλιακή θα βρείτε πολλά μπαρ και εστιατόρια — μια ωραία επιλογή για μεσημεριανό, βραδινό ή για να πιείτε κάτι.",
+          "highlights": [
+            "Βόλτα δίπλα στη θάλασσα",
+            "Εστιατόρια",
+            "Μπαρ"
+          ]
+        },
+        "idealForLabel": "Ιδανικό για",
+        "idealFor": "Μια βόλτα στην πόλη, όμορφη θέα και, στο τέλος, φαγητό ή ένα ποτό δίπλα στη θάλασσα.",
+        "imageAlt1": "Θέα από το Αίγιο προς τη θάλασσα, μια προβλήτα και ένα πλοίο, με βουνά στο βάθος",
+        "imageAlt2": "Κτίρια και στέγες του Αιγίου δίπλα στη θάλασσα, με την ακτογραμμή και βουνά στο βάθος"
+      },
       title: "Μέρη στην περιοχή",
       beaches: {
         title: "Παραλίες",
@@ -1161,6 +1557,120 @@ export const translations = {
       photoAlt: "Ο χώρος εκδηλώσεων στο Λιόπετρο"
     },
     travel: {
+      economicGuide: {
+        "title": "Οδηγός βήμα προς βήμα",
+        "subtitle": "Αεροδρόμιο Αθηνών → Αίγιο",
+        "stepCount": "11 βήματα · 10 φωτογραφίες",
+        "openGuide": "Άνοιγμα του οδηγού",
+        "closeGuide": "Κλείσιμο του οδηγού",
+        "stepLabel": "ΒΗΜΑ {number} ΑΠΟ {total}",
+        "disclaimer": "Οι τιμές, η συχνότητα και τα ωράρια είναι ενδεικτικά. Σας προτείνουμε να ελέγξετε τις ενημερωμένες πληροφορίες πριν από το ταξίδι.",
+        "steps": {
+          "step1": {
+            "title": "Αγόρασε εισιτήριο για το λεωφορείο",
+            "paragraphs": [
+              "Βγαίνοντας από το αεροδρόμιο της Αθήνας, ακολούθησε τις πινακίδες προς τα λεωφορεία. Στον εξωτερικό χώρο θα βρεις τα εκδοτήρια Travel Tickets.",
+              "Εκεί θα αγοράσεις το εισιτήριο για τα λεωφορεία του αεροδρομίου. Δεν χρειάζεται να δηλώσεις συγκεκριμένο προορισμό: οι γραμμές αυτές έχουν ενιαία τιμή εισιτηρίου."
+            ],
+            "alt": "Εκδοτήριο Travel Tickets στο αεροδρόμιο Αθηνών για εισιτήρια λεωφορείου",
+            "highlight": "Περίπου 5,50 €",
+            "note": "Ενδεικτική τιμή · μπορεί να αλλάξει."
+          },
+          "step2": {
+            "title": "Βρες το λεωφορείο X93",
+            "paragraphs": [
+              "Κοντά στα εκδοτήρια θα βρεις τη στάση του X93. Αυτό προτείνουμε για να συνεχίσεις κατευθείαν προς το Αίγιο.",
+              "Το X93 δεν περνά από το κέντρο της Αθήνας. Θέλεις να επισκεφτείς πρώτα το κέντρο; Τότε πάρε το X95 προς την πλατεία Συντάγματος."
+            ],
+            "alt": "Πινακίδα της στάσης του X93 στο αεροδρόμιο Αθηνών",
+            "busOptions": [
+              {
+                "line": "X93",
+                "route": "Αεροδρόμιο → ΚΤΕΛ Κηφισού → συνέχεια προς Αίγιο",
+                "note": "Η πρότασή μας για να πας κατευθείαν προς το Αίγιο. Στο ΚΤΕΛ αλλάζεις λεωφορείο."
+              },
+              {
+                "line": "X95",
+                "route": "Αεροδρόμιο → πλατεία Συντάγματος → κέντρο Αθήνας",
+                "note": "Για μια επίσκεψη στην Αθήνα πρώτα. Μετά θα χρειαστεί να οργανώσεις τη μετακίνησή σου προς το ΚΤΕΛ για να συνεχίσεις προς Αίγιο."
+              }
+            ]
+          },
+          "step3": {
+            "title": "Κατέβα στην τελευταία στάση",
+            "paragraphs": [
+              "Μείνε στο X93 μέχρι την τελευταία στάση: τον σταθμό ΚΤΕΛ Κηφισού στην Αθήνα. Εδώ τελειώνει το πρώτο σκέλος της διαδρομής."
+            ],
+            "alt": "Στεγασμένος χώρος λεωφορείων στο ΚΤΕΛ Κηφισού, στο τέλος της διαδρομής του X93",
+            "highlight": "Τελευταία στάση · ΚΤΕΛ Κηφισού"
+          },
+          "step4": {
+            "title": "Βρες την πινακίδα «Tickets Office»",
+            "paragraphs": [
+              "Στο ΚΤΕΛ, αναζήτησε το κτίριο ή τον χώρο με την πινακίδα Tickets Office. Εδώ θα αγοράσεις το εισιτήριο για το Αίγιο."
+            ],
+            "alt": "Είσοδος προς τα εκδοτήρια με την πινακίδα Tickets Office",
+            "highlight": "Tickets Office"
+          },
+          "step5": {
+            "title": "Ακολούθησε τον διάδρομο",
+            "paragraphs": [
+              "Προχώρησε στον μακρύ διάδρομο που οδηγεί στα εκδοτήρια. Η φωτογραφία θα σε βοηθήσει να προσανατολιστείς."
+            ],
+            "alt": "Μακρύς διάδρομος με χρωματιστές γραμμές στο δάπεδο που οδηγεί στα εκδοτήρια"
+          },
+          "step6": {
+            "title": "Μπες στην αίθουσα των εκδοτηρίων",
+            "paragraphs": [
+              "Μόλις μπεις στην αίθουσα, αναζήτησε το εκδοτήριο κοντά στην κολόνα της φωτογραφίας. Εκεί θα αγοράσεις εισιτήριο για το Αίγιο."
+            ],
+            "alt": "Αίθουσα εκδοτηρίων του ΚΤΕΛ με την κολόνα ως σημείο αναφοράς"
+          },
+          "step7": {
+            "title": "Αγόρασε εισιτήριο για το Αίγιο",
+            "paragraphs": [
+              "Βρες το εκδοτήριο που αναγράφει προορισμούς όπως Patra, Aegion, Kalavrita και Akrata. Ζήτησε εισιτήριο για Αίγιο — Egio / Aegion στις λατινικές επιγραφές.",
+              "Για τους φίλους μας που δεν μιλούν ελληνικά, το Egio προφέρεται περίπου «Éyio».",
+              "Ρώτησε και για εισιτήριο με επιστροφή: μπορεί να υπάρχει έκπτωση."
+            ],
+            "alt": "Εκδοτήριο με τους προορισμούς Patra, Aegion, Kalavrita και Akrata",
+            "highlight": "≈ 30 € με επιστροφή · ενδεικτική τιμή",
+            "note": "Οι τιμές και τα δρομολόγια μπορεί να αλλάξουν. Επιβεβαίωσε την τιμή και τους όρους της επιστροφής στο εκδοτήριο."
+          },
+          "step8": {
+            "title": "Βρες το λεωφορείο σου",
+            "paragraphs": [
+              "Πήγαινε στο λεωφορείο την ώρα που αναγράφεται στο εισιτήριο. Το σημείο αναχώρησης που χρησιμοποιήσαμε βρίσκεται μπροστά ή κοντά στο βιβλιοπωλείο της φωτογραφίας."
+            ],
+            "alt": "Χώρος αναχώρησης λεωφορείων δίπλα στο βιβλιοπωλείο του σταθμού",
+            "note": "Από την εμπειρία μας, συνήθως υπάρχουν δρομολόγια περίπου κάθε ώρα, αλλά αυτό είναι ενδεικτικό και μπορεί να αλλάξει. Επιβεβαίωσε πάντα την ώρα και το σημείο αναχώρησης."
+          },
+          "step9": {
+            "title": "Βεβαιώσου ότι είναι το σωστό λεωφορείο",
+            "paragraphs": [
+              "Αναζήτησε την πινακίδα Achaia. Το λεωφορείο μπορεί να γράφει Πάτρα / Patra / Patras ως κύριο προορισμό, παρότι σταματά στο Αίγιο.",
+              "Πριν ανέβεις, επιβεβαίωσε με τον οδηγό ή το προσωπικό ότι σταματά στο Αίγιο. Συνήθως μπορούν να σας βοηθήσουν και με βασικά αγγλικά."
+            ],
+            "alt": "Πινακίδα Achaia πάνω από λεωφορείο με προορισμό την Πάτρα",
+            "highlight": "Achaia · Patra / Patras · επιβεβαίωσε τη στάση στο Αίγιο"
+          },
+          "step10": {
+            "title": "Χαλάρωσε και απόλαυσε τη διαδρομή",
+            "paragraphs": [
+              "Η διαδρομή διαρκεί περίπου δύο ώρες. Ύστερα από τόσα βήματα, ήρθε η ώρα να καθίσεις και να απολαύσεις το τοπίο: τη θάλασσα, το πέρασμα από τη διώρυγα της Κορίνθου, τον Κορινθιακό κόλπο και τις ακτές της Πελοποννήσου."
+            ],
+            "alt": "Θέα στη θάλασσα και την ακτή από το λεωφορείο προς το Αίγιο",
+            "highlight": "≈ 2 ώρες διαδρομής"
+          },
+          "step11": {
+            "title": "Έφτασες στο Αίγιο!",
+            "paragraphs": [
+              "Κατέβα στον σταθμό λεωφορείων στο κέντρο του Αιγίου.",
+              "Θα κάνουμε ό,τι μπορούμε για να είμαστε εκεί και να σας υποδεχτούμε."
+            ]
+          }
+        }
+      },
       map: {
         title: 'Διαδρομή προς το Αίγιο',
         chooseRoute: 'Επιλογή διαδρομής',

@@ -4,12 +4,12 @@ import { translations } from '../../i18n/translations.js'
 import './Navbar.css'
 
 const navigationItems = [
-  { to: '/venue', key: 'venue' },
-  { to: '/program', key: 'program' },
-  { to: '/travel', key: 'travel' },
-  { to: '/accommodation', key: 'accommodation' },
-  { to: '/culture-food', key: 'cultureFood' },
-  { to: '/local-places', key: 'localPlaces' },
+  { to: '/venue', key: 'venue', visible: true },
+  { to: '/program', key: 'program', visible: true },
+  { to: '/travel', key: 'travel', visible: true },
+  { to: '/accommodation', key: 'accommodation', visible: false },
+  { to: '/culture-food', key: 'cultureFood', visible: false },
+  { to: '/local-places', key: 'localPlaces', visible: true },
 ]
 
 export default function Navbar({ currentLanguage }) {
@@ -51,7 +51,7 @@ export default function Navbar({ currentLanguage }) {
           {text.information}
         </button>
         <ul id={menuId} className={`navbar__list${isOpen ? ' navbar__list--open' : ''}`}>
-          {navigationItems.map(({ to, key }) => (
+          {navigationItems.filter(item => item.visible).map(({ to, key }) => (
             <li key={to}>
               <NavLink className="navbar__link" to={to} onClick={() => setIsOpen(false)}>
                 {text[key]}

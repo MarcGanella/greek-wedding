@@ -3,6 +3,7 @@ import { translations } from '../../i18n/translations.js'
 import GreeceRouteMap from '../../components/Travel/GreeceRouteMap.jsx'
 import TravelRoute from '../../components/Travel/TravelRoute.jsx'
 import TransportIcon from '../../components/Travel/TransportIcon.jsx'
+import TravelRouteGuide from '../../components/TravelRouteGuide/TravelRouteGuide.jsx'
 import './Travel.css'
 
 const transportModes = {
@@ -126,6 +127,7 @@ export default function Travel() {
               </div>
             </div>
             <p className="travel-conclusion">{option.conclusion}</p>
+            {option.id === 'economy' && <TravelRouteGuide text={text.economicGuide} />}
           </article>
         ))}
       </section>

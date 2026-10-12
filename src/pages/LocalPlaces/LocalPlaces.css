@@ -34,3 +34,60 @@
 @media (min-width: 52rem) {
   .beaches-list { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
+
+.aigio-section {
+  display: grid;
+  gap: 1.5rem;
+  margin-top: 2.5rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--color-gold-soft);
+}
+
+.aigio-intro { max-width: 48rem; }
+.aigio-intro p:last-child { margin-bottom: 0; }
+.aigio-subtitle { color: var(--color-olive-dark); font-size: 1.125rem; }
+
+.aigio-photos,
+.aigio-areas {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 1.5rem;
+}
+
+.aigio-photos img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 0.25rem;
+}
+
+.aigio-highlights {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.aigio-highlights li {
+  padding: 0.25rem 0.625rem;
+  border-radius: 0.25rem;
+  background: var(--color-paper);
+  color: var(--color-olive-dark);
+  font-size: 0.875rem;
+}
+
+.aigio-ideal {
+  margin: 0;
+  padding-inline-start: 1rem;
+  border-inline-start: 2px solid var(--color-olive);
+}
+
+.aigio-ideal dt { color: var(--color-blue-dark); font-weight: 700; }
+.aigio-ideal dd { margin: 0.25rem 0 0; }
+
+@media (min-width: 52rem) {
+  .aigio-photos,
+  .aigio-areas { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}

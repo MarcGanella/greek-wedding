@@ -1,5 +1,7 @@
 import { useOutletContext } from 'react-router-dom'
 import BeachCard from '../../components/BeachCard/BeachCard.jsx'
+import aigioImage1 from '../../assets/images/places/Egio/Egio_1.jpeg'
+import aigioImage2 from '../../assets/images/places/Egio/Egio_2.jpeg'
 import { translations } from '../../i18n/translations.js'
 import './LocalPlaces.css'
 
@@ -15,6 +17,7 @@ export default function LocalPlaces() {
   const { currentLanguage } = useOutletContext()
   const text = translations[currentLanguage].localPlaces
   const beaches = text.beaches
+  const aigio = text.aigio
 
   return (
     <main className="local-places-page" lang={currentLanguage}>
@@ -43,6 +46,32 @@ export default function LocalPlaces() {
             />
           ))}
         </div>
+      </section>
+      <section className="aigio-section" aria-labelledby="aigio-title">
+        <header className="aigio-intro">
+          <h2 id="aigio-title">{aigio.name}</h2>
+          <p className="aigio-subtitle">{aigio.subtitle}</p>
+          <p>{aigio.intro}</p>
+        </header>
+        <div className="aigio-photos">
+          <img src={aigioImage1} alt={aigio.imageAlt1} width="2048" height="1152" loading="lazy" decoding="async" />
+          <img src={aigioImage2} alt={aigio.imageAlt2} width="2048" height="1152" loading="lazy" decoding="async" />
+        </div>
+        <div className="aigio-areas">
+          {['upperTown', 'seafront'].map(area => (
+            <section key={area} aria-labelledby={`aigio-${area}-title`}>
+              <h3 id={`aigio-${area}-title`}>{aigio[area].title}</h3>
+              <p>{aigio[area].description}</p>
+              <ul className="aigio-highlights">
+                {aigio[area].highlights.map(highlight => <li key={highlight}>{highlight}</li>)}
+              </ul>
+            </section>
+          ))}
+        </div>
+        <dl className="aigio-ideal">
+          <dt>{aigio.idealForLabel}</dt>
+          <dd>{aigio.idealFor}</dd>
+        </dl>
       </section>
     </main>
   )
